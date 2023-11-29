@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .sliderimg {
+            display: none;
+        }
+        .sliderimgcontainer {
+            border: 2px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .btn {
+            height: 8%;
+            width: 3.3%;
+            position: absolute;
+        }
+        .btn button {
+            cursor: pointer;
+            height: 100%;
+            width: 100%;
+            border: 1px solid white;
+            background-color: white;
+        }
+        #rightbtn {
+            right: 8px;
+        }
+        .btn button i {
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+
+        <div id="leftbtn" class="btn">
+            <button onclick="ClickToChange(-1)">
+                <i class="fa fa-angle-left" style="font-size:24px"></i>
+            </button>
+        </div>
+        <div id="rightbtn" class="btn">
+            <button onclick="ClickToChange(1)">
+                <i class="fa fa-angle-right"></i>
+            </button>
+        </div>
+
+        <div class="sliderimgcontainer">
+            <div class="sliderimg" id="img1">
+                <img width="100%" src="images/s1.png" alt="">
+            </div>
+            <div class="sliderimg" id="img2">
+                <img width="100%" src="images/s2.png" alt="">
+            </div>
+            <div class="sliderimg" id="img3">
+                <img width="100%" src="images/s3.png" alt="">
+            </div>
+            <div class="sliderimg" id="img4">
+                <img width="100%" src="images/s4.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="slide.js"></script>
+</body>
+
+</html>
